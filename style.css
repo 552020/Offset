@@ -1,0 +1,74 @@
+body {
+  background-color: blue;
+}
+
+h1 {
+  font-family: "Nova Slim", cursive;
+  font-size: 400px;
+  color: white;
+  position: relative;
+  right: 120px;
+  top: 150px;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: "Nova Slim", cursive;
+  color: white;
+  font-size: 40px;
+  font-weight: normal;
+  float: right;
+  transform: rotate(20deg);
+  position: relative;
+  left: 10px;
+}
+
+p {
+  font-family: "Nova Slim", cursive;
+  color: white;
+  font-size: 20px;
+  margin-block-start: 0.1em; /* margin-block-start and margin-block-end were set to 1em by the user agent sheet*/
+  margin-block-end: 0.1em;
+  text-align: justify;
+  clear: right;
+}
+
+ol {
+  list-style-position: outside;
+  list-style-type: decimal;
+  padding: 0px;
+  margin-left: 0px;
+}
+
+ol ol {
+  margin-left: 22px;
+}
+
+ul {
+  list-style-type: none; /*disc; circle; square; decimal; decimal-leading-zero; upper-roman; lower-roman; lower greek; upper-alpha; mongolian*/
+  list-style-position: outside;
+  border-left: solid 1px white;
+  margin: 0px;
+  padding: 0px;
+}
+#definition {
+  border: solid 1px white;
+  padding: 0px;
+  width: 500px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 10px;
+}
+
+.small {
+  font-variant: small-caps;
+  display: inline;
+}
+
+ol li::marker {
+  color: white;
+  font-size: 24px;
+  padding: 0px;
+  margin: 0px;
+}
