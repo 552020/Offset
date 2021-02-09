@@ -10,6 +10,7 @@ h1 {
   right: 120px;
   top: 150px;
   font-weight: normal;
+  overflow-wrap: break-word;
 }
 
 h2 {
@@ -17,10 +18,11 @@ h2 {
   color: white;
   font-size: 40px;
   font-weight: normal;
-  float: right;
-  transform: rotate(20deg);
+  /*float: right;*/
+  transform: rotate(5deg);
   position: relative;
-  left: 10px;
+  top: 45px;
+  right: 5px;
 }
 
 p {
@@ -33,6 +35,33 @@ p {
   clear: right;
 }
 
+@media screen and (max-width: 1000px) {
+  body {
+    background-color: white;
+  }
+
+  h1 {
+    color: blue;
+  }
+
+  p {
+    color: blue;
+  }
+
+  h2 {
+    color: blue;
+  }
+}
+
+#definition {
+  padding: 0px;
+  width: 500px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 10px;
+}
+
 ol {
   list-style-position: outside;
   list-style-type: decimal;
@@ -42,23 +71,6 @@ ol {
 
 ol ol {
   margin-left: 22px;
-}
-
-ul {
-  list-style-type: none; /*disc; circle; square; decimal; decimal-leading-zero; upper-roman; lower-roman; lower greek; upper-alpha; mongolian*/
-  list-style-position: outside;
-  border-left: solid 1px white;
-  margin: 0px;
-  padding: 0px;
-}
-#definition {
-  border: solid 1px white;
-  padding: 0px;
-  width: 500px;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  margin: 10px;
 }
 
 .small {
